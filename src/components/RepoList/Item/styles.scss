@@ -1,0 +1,42 @@
+.ItemRepo {
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+    color: var(--white);
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--light-gray);
+  
+    &:last-of-type {
+      border-bottom: none;
+    }
+  
+    h4 {
+      font-weight: lighter;
+    }
+  
+    div {
+      display: flex;
+      margin-top: 10px;
+      flex-direction: row;
+      align-items: center;
+  
+      span {
+        display: flex;
+        margin-right: 10px;
+        flex-direction: row;
+        align-items: center;
+      }
+  
+      .language, svg {
+        margin: 0;
+        margin-right: 5px;
+        border-radius: 100%;
+      } 
+  
+      .language {
+        width: 12px;
+        height: 12px;
+      }
+    }
+}
