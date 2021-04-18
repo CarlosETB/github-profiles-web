@@ -31,7 +31,13 @@
 <!-- ABOUT THE PROJECT -->
 
 ## Sobre o Projeto
+Projeto realizado utilizando a API do GitHub
 
+API REST EXTERNA A SER CONSUMIDA
+
+```sh
+    https://api.github.com/
+```
 
 <br />
 
