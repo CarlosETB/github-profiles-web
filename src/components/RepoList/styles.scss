@@ -1,0 +1,106 @@
+.RepoList {
+  flex: 1;
+  display: flex;
+  padding: 10px 0pc;
+  flex-direction: column;
+
+  .tab-list {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid var(--white);
+    
+    button { 
+      border: none;
+      display: flex;
+      cursor: pointer;
+      font-size: 20px;
+      margin-right: 15px;
+      color: var(--white);
+      letter-spacing: 1px;
+      flex-direction: row;
+      align-items: center;
+      font-weight: lighter;
+      text-transform: capitalize;
+      background-color: var(--transparent);
+
+      p {
+        margin-left: 5px;
+      }
+    }
+
+    .active {
+      font-weight: normal;
+      margin-bottom: -1px;
+      border-bottom: 2px solid var(--secondary);
+    }
+  }
+
+  .tab-content {
+    margin: 0;
+    height: 80vh;
+    display: flex;
+    padding: 10px 20px;
+    overflow-y: scroll;
+    flex-direction: column;
+
+    &::-webkit-scrollbar {
+      width: 5px;    
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: var(--transparent);        
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--light-gray);    
+      border-radius: 20px;  
+      margin-right: 5px;   
+      &:hover, &:active {
+        background-color: var(--gray);    
+      }
+    }
+  }
+}
+
+.ItemRepo {
+  width: 100%;
+  display: flex;
+  padding: 10px 0px;
+  color: var(--white);
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--light-gray);
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  h4 {
+    font-weight: lighter;
+  }
+
+  div {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    align-items: center;
+
+    span {
+      display: flex;
+      margin-right: 10px;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .language, svg {
+      margin: 0;
+      margin-right: 5px;
+      border-radius: 100%;
+    } 
+
+    .language {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}

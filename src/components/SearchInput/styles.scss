@@ -1,0 +1,31 @@
+.SearchInput {
+    display: flex;
+    border-radius: 5px;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--background);
+    border: 1px solid var(--light-gray);
+
+    input {
+        border: none;
+        padding: 5px 10px;
+        color: var(--white);
+        background-color: var(--transparent);
+    }
+
+    button {
+        height: 100%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--transparent);
+
+        svg {
+            width: auto;
+            height: 20px;
+            margin: 0 10px;
+            color: var(--white);
+        }
+    }
+}
