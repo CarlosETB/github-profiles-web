@@ -43,7 +43,7 @@ const Detail: React.FC = () => {
 
             <main>
                 <aside>
-                    <img src={user?.avatar_url} alt='User Photo' />
+                    <img src={user?.avatar_url} alt='user-photo' />
                     <h1>{user?.name}</h1>
                     <h3>{user?.login}</h3>
 

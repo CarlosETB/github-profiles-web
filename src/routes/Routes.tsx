@@ -10,13 +10,15 @@ import {
 // Pages
 import Home from 'pages/Home'
 import Detail from 'pages/Detail'
+import Error from 'pages/Error'
 
 function Routes() {
     return (
         <Router>
             <Switch>
                 <Route path='/' component={Home} exact />
-                <Route path='/:username/' component={Detail} exact />
+                <Route path='/user/:username/' component={Detail} exact />
+                <Route path='' component={Error} exact />
             </Switch>
         </Router>
     )

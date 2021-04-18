@@ -25,7 +25,7 @@ const SearchInput: React.FC = () => {
         event.preventDefault()
 
         if (validateUsername(searchField)) {
-            history.push(`/${searchField}`)
+            history.push(`/user/${searchField}`)
         } else {
             alert(t('invalid'))
         }

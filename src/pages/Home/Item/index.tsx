@@ -17,8 +17,8 @@ const Item: React.FC<LayoutProps> = (props) => {
     const { item } = props
 
     return (
-        <Link to={String(item?.login)} className='Item'>
-            <img src={item?.avatar_url} alt='User Photo' />
+        <Link to={`/${String(item?.login)}`} className='Item'>
+            <img src={item?.avatar_url} alt='user-photo' />
 
             <span>@{item?.login}</span>
         </Link>
