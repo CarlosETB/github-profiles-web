@@ -25,7 +25,7 @@ const Item: React.FC<ItemProps> = (props) => {
         <div className='ItemRepo'>
             <h2>
                 {starred &&
-                    <Link to={`/${String(item?.owner?.login)}`}>
+                    <Link to={`/user/${String(item?.owner?.login)}`}>
                         {`${item?.owner?.login} / `}
                     </Link>}
 
